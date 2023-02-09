@@ -173,7 +173,7 @@
 			}, function(err, result) {
 				if (err) return console.dir(err);
 				console.log(JSON.stringify(result));
-				 $.post('', {
+				 $.post('https://live.planetsandbox.io/login', {
 				 	ClientToken: getParams['client'],
 				 	PlainMessage: encodeURIComponent(getParams['plain']),
 				 	SignedMessage: result['result']
